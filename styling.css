@@ -130,3 +130,35 @@ nav {
 .knop-secondary:hover {
     opacity: 0.85;
 }
+
+/* Twee kolommen met kaarten voor elke bijdrage */
+.bijdrage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Elke bijdrage kaart */
+.bijdrage-kaart {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.bijdrage-kaart:hover {
+  transform: translateY(-4px);
+  border-color: rgba(126,255,212,0.3);
+}
+
+.bijdrage-kaart h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.bijdrage-kaart p {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
