@@ -162,3 +162,102 @@ nav {
   font-size: 0.9rem;
   line-height: 1.7;
 }
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.project-hero {
+  padding: 80px 0 40px 0;
+}
+
+.project-hero h1,
+section h2 {
+  margin-bottom: 24px;
+}
+
+.project-omschrijving,
+.info-kaart p,
+.tijdlijn-inhoud p,
+.bewijs-kaart p {
+  color: #aaaaaa;
+  line-height: 1.7;
+}
+
+.info-kaart,
+.tijdlijn-inhoud,
+.bewijs-kaart {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.bewijs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.bewijs-kaart img,
+.bewijs-kaart video {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.tag-rij {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag {
+  background: rgba(126,255,212,0.12);
+  color: #7effd4;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.tijdlijn {
+  display: grid;
+  gap: 20px;
+}
+
+.tijdlijn-datum {
+  color: #7effd4;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 20px 24px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bijdrage-grid,
+  .bewijs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
