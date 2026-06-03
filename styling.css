@@ -31,34 +31,102 @@ body::before {
 
 /* De navigatiebalk */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background-color: rgba(10, 10, 18, 0.85);
-  position: sticky;
-  top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgba(10, 10, 18, 0.85);
+    position: sticky;
+    top: 0;
 }
 
 /* Je naam links in de navbar */
 .logo {
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #7effd4;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #7effd4;
 }
 
 /* De linkjes rechts in de navbar */
 .nav-links {
-  display: flex;
-  gap: 24px;
+    display: flex;
+    gap: 24px;
 }
 
 .nav-links a {
-  color: #cccccc;
-  text-decoration: none;
-  font-size: 0.95rem;
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.95rem;
 }
 
 .nav-links a:hover {
-  color: #7effd4;
+    color: #7effd4;
+}
+
+/* De hero sectie */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    max-width: 900px;
+}
+
+/* Kleine tekst boven je naam */
+.eyebrow {
+    color: #7effd4;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+/* Je naam groot */
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+/* De beschrijvende tekst */
+.hero-tekst {
+    color: #aaaaaa;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 32px;
+}
+
+/* De twee knoppen naast elkaar */
+.knoppen {
+    display: flex;
+    gap: 16px;
+}
+
+/* Groene knop */
+.knop-primary {
+    background-color: #7effd4;
+    color: #0a0a12;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Doorzichtige knop */
+.knop-secondary {
+    background-color: transparent;
+    color: #f0f0f0;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Hover effect op beide knoppen */
+.knop-primary:hover,
+.knop-secondary:hover {
+    opacity: 0.85;
 }
